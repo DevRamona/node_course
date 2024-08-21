@@ -3,7 +3,6 @@ const fs = require("fs")
 const _ = require("lodash")
 const server = http.createServer((request, response) => {
 
-    response.setHeader("Content-Type" , "text/html")
     const num = _.random(0,20)
     console.log(num)
     
