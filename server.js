@@ -1,6 +1,6 @@
 const http = require("http")
 const server = http.createServer((request, response) => {
-    console.log("Request made")
+    console.log(request.closed, request.url)
 })
 
 server.listen(3000, "localhost", () => {
