@@ -1,6 +1,9 @@
 const express = require("express")
 const app = express()
 
+app.set("view engines", "ejs")
+app.set("Views", "myViews")
+
 app.listen(3000)
 app.get('/', (request, response)=> {
     response.sendFile("./views/index.html",{root :__dirname})
