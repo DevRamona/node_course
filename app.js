@@ -6,7 +6,7 @@ app.set("Views", "myViews")
 
 app.listen(3000)
 app.get('/', (request, response)=> {
-    response.sendFile("./views/index.html",{root :__dirname})
+    response.render('index')
 })
 
 app.get("/about", (request, response) => {
