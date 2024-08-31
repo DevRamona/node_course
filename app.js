@@ -19,5 +19,8 @@ app.get("/about-us", (request,response) => {
 })
 
 app.use((request, response) => {
-    response.status(404).sendFile("./views/404.html", {root: __dirname})
+    response.status(301).sendFile("./views/404.html", {root: __dirname})
 })
+
+
+// mongodb+srv://ringabire:LXN4wVpibI6P95wj@example-test.xn04s.mongodb.net/?retryWrites=true&w=majority&appName=example-test
